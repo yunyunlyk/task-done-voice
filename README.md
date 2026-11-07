@@ -1,6 +1,6 @@
 # task-done-voice
 
-当前版本：**v1.0.0**（变更记录见 [CHANGELOG.md](CHANGELOG.md)）
+当前版本：**v1.0.1**（变更记录见 [CHANGELOG.md](CHANGELOG.md)）
 
 任务一结束，本机用系统语音响一句「任务完成了」。
 
@@ -106,7 +106,7 @@ bash scripts/notify.sh --event done --lang en
 powershell -NoProfile -ExecutionPolicy Bypass -File tests\smoke.ps1
 ```
 
-六条断言：中文默认文案、英文 `ask` 文案、`VOICE_NOTIFY_OFF` 静音、节流窗口内只响一次、真实调用耗时 < 2 秒、退出码全为 0。会真的响一声，属正常。
+七条断言：中文默认文案、英文 `ask` 文案、`VOICE_NOTIFY_OFF` 静音、节流窗口内只响一次、真实调用耗时 < 2 秒、worker 真的把语音送进 TTS、三档事件退出码全为 0。会真的响一两声，属正常。
 
 ## 更新
 

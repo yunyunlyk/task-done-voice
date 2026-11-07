@@ -2,6 +2,12 @@
 
 版本号遵循[语义化版本](https://semver.org/lang/zh-CN/)，git tag 即版本事实来源。每一版在 GitHub Releases 上都有对应发行版。
 
+## [1.0.1] - 2026-11-07
+
+### 修复
+
+- README 与 CHANGELOG 把冒烟断言条数写成「六条」，实际是 **7 条**：v1.0.0 定稿前给 `tests/smoke.ps1` 加了一条端到端断言（worker 真的把语音送进 TTS，日志里必须有 `SPEAKING`），改文档时漏同步。脚本本身没变。
+
 ## [1.0.0] - 2026-11-07
 
 首个正式发行版。
